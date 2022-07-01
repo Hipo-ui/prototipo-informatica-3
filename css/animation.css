@@ -1,0 +1,38 @@
+@-webkit-keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(calc(-250px * 7));
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+.animation-item {
+    -webkit-animation: 40s linear 0s infinite normal none running scroll;
+    animation: 40s linear 0s infinite normal none running scroll;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: scroll;
+}
+
+.animation-item-reverse {
+    -webkit-animation: 40s linear 0s infinite normal none running scroll reverse;
+    animation: 40s linear 0s infinite normal none running scroll reverse;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: scroll;
+    animation-direction: reverse;
+}

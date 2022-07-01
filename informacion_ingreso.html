@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/logos/escudo-unsij-white.png" type="image/png">
+    <title>Información de ingreso | Licenciatura en Informática</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Header -->
+        <app-header>
+            <template v-slot:about>
+                <a href="./acerca_de.html" class="navbar-link">Acerca de la carrera</a>
+            </template>
+            <template v-slot:login-info>
+                <a href="./informacion_ingreso.html" class="navbar-link navbar-link-active">Información de ingreso</a>
+            </template>
+            <template v-slot:students>
+                <a href="./alumnos.html" class="navbar-link">Alumnos</a>
+            </template>
+            <template v-slot:teachers>
+                <a href="./profesores.html" class="navbar-link">Profesores</a>
+            </template>
+            <template v-slot:contact>
+                <a href="./contacto.html" class="navbar-link">Contacto</a>
+            </template>
+            <template v-slot:faqs>
+                <a href="./preguntas_frecuentes.html" class="navbar-link">Preguntas frecuentes</a>
+            </template>
+        </app-header>
+        <!-- /Header -->
+
+
+        <!-- Menú Mobile -->
+        <app-menu-mobile>
+            <template v-slot:about>
+                <a href="./acerca_de.html" class="navbar-link">Acerca de la carrera</a>
+            </template>
+            <template v-slot:login-info>
+                <a href="./informacion_ingreso.html" class="navbar-link navbar-link-active">Información de ingreso</a>
+            </template>
+            <template v-slot:students>
+                <a href="./alumnos.html" class="navbar-link">Alumnos</a>
+            </template>
+            <template v-slot:teachers>
+                <a href="./profesores.html" class="navbar-link">Profesores</a>
+            </template>
+            <template v-slot:contact>
+                <a href="./contacto.html" class="navbar-link">Contacto</a>
+            </template>
+            <template v-slot:faqs>
+                <a href="./preguntas_frecuentes.html" class="navbar-link">Preguntas frecuentes</a>
+            </template>
+        </app-menu-mobile>
+        <!-- /Menú Mobile -->
+
+
+        <!-- Contennido -->
+        <main class="w-full flex flex-col my-14 lg:my-28 gap-14 lg:gap-28">
+
+            <!-- Requisitos -->
+            <section class="section-fluid- section-container">
+                <div>
+                    <header class="title-dark">
+                        Requisitos para el ingreso
+                    </header>
+                </div>
+                <div class="grid grid-cols-none xl:grid-cols-9 gap-8">
+                    <div class="hidden xl:col-span-4 xl:flex xl:items-end border bg-[url('../img/photos/imagen-8.JPG')] w-full h-full bg-cover bg-center rounded-lg">
+                        >
+                    </div>
+
+                    <div class="grid grid-row-12 md:grid md:grid-cols-2 xl:col-span-5 xl:flex xl:flex-col gap-6">
+                        <app-requirement>
+                            <template v-slot:description>2 Copias del acta de nacimiento</template>
+                        </app-requirement>
+
+                        <app-requirement>
+                            <template v-slot:description>2 Copias de la CURP</template>
+                        </app-requirement>
+
+                        <app-requirement>
+                            <template v-slot:description>2 Copias del Certificado de secundaria</template>
+                        </app-requirement>
+
+                        <app-requirement>
+                            <template v-slot:description>2 Copias del Certificado de bachillerato o Constancia de
+                                estudios con tira de materias del 1° al 5° semestre</template>
+                        </app-requirement>
+
+                        <app-requirement>
+                            <template v-slot:description>6 Fotografías tamaño infantil blanco y negro en papel
+                                mate</template>
+                        </app-requirement>
+
+                        <app-requirement>
+                            <template v-slot:description>Original y 2 copias del Comprobante de depósito</template>
+                        </app-requirement>
+                    </div>
+                </div>
+            </section>
+            <!-- /Requisitos -->
+
+
+            <!-- Fechas -->
+            <section class="section-fluid bg-light">
+                <div class="section-container">
+                    <div>
+                        <header class="title-dark text-center">
+                            Fechas importantes</header>
+                    </div>
+                    <div class="flex flex-col grid-cols-none md:grid md:grid-cols-2 gap-8 items-center">
+                        <app-date>
+                            <template v-slot:number>1</template>
+                            <template v-slot:title>Entrega de fichas:</template>
+                            <template v-slot:description>del 18 de febrero al 22 de junio de 2022.</template>
+                        </app-date>
+
+                        <app-date>
+                            <template v-slot:number>2</template>
+                            <template v-slot:title>Examen de selección:</template>
+                            <template v-slot:description>28 de mayo y 04 de julio de 2022.</template>
+                        </app-date>
+
+                        <app-date>
+                            <template v-slot:number>3</template>
+                            <template v-slot:title>Inscripciones al curso propedéutico:</template>
+                            <template v-slot:description>18 al 22 de julio de 2022.</template>
+                        </app-date>
+
+                        <app-date>
+                            <template v-slot:number>4</template>
+                            <template v-slot:title>Curso propedéutico:</template>
+                            <template v-slot:description>01 de agosto al 23 de septiembre de 2022.</template>
+                        </app-date>
+                    </div>
+                </div>
+            </section>
+            <!-- /Fechas -->
+
+
+            <!-- Costo y Becas -->
+            <div class="section-fluid-">
+                <section class="section-container grid grid-cols-none md:grid-cols-2 gap-14 lg:gap-8">
+                    <div class="cost_item">
+                        <div class="cost_item-content_figure">
+                            <img src="./img/animated/money-animate.svg" alt="" class="cost_item-content_figure-image">
+                        </div>
+
+                        <div class="cost_item-content_text">
+                            <div>
+                                <header class="title-dark text-center">
+                                    Costos</header>
+                            </div>
+                            <p class="content_text-dark">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Quibusdam libero aperiam natus in explicabo exercitationem magnam accusantium
+                                cupiditate, accusamus, tempora delectus esse sunt quia, officia obcaecati ut impedit
+                                alias
+                                veniam!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="cost_item">
+                        <div class="cost_item-content_figure">
+                            <img src="./img/animated/education-animate.svg" alt=""
+                                class="cost_item-content_figure-image">
+                        </div>
+
+                        <div class="cost_item-content_text">
+                            <div>
+                                <header class="title-dark text-center">
+                                    Becas</header>
+                            </div>
+                            <p class="content_text-dark">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Quibusdam libero aperiam natus in explicabo exercitationem magnam accusantium
+                                cupiditate, accusamus, tempora delectus esse sunt quia, officia obcaecati ut impedit
+                                alias
+                                veniam!
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- Costo y Becas -->
+
+        </main>
+        <!-- Contenido -->
+
+
+        <!-- Footer -->
+        <app-footer>
+        </app-footer>
+        <!-- /Footer -->
+    </div>
+
+
+    <!-- Componentes -->
+    <script src="./js/app.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+
+    <!-- Animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000,
+            delay: 200,
+            once: true,
+        });
+    </script>
+</body>
+
+</html>

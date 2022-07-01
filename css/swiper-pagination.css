@@ -1,0 +1,20 @@
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  position: absolute;
+  left: 50%;
+  top: 95%;
+  transform: translate(-50%, -50%);
+  border-radius: .25rem;
+  padding: .1rem;
+  background: #ffffff;
+  opacity: .75;
+  width: auto;
+  height: 1.9rem;
+  justify-content: center;
+  justify-items: center;
+  flex: content;
+}
+

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/swiper-pagination.css">
+    <link rel="shortcut icon" href="./img/logos/escudo-unsij-white.png" type="image/png">
+    <title>Alumnos | Licenciatura en Informática</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Header -->
+        <app-header>
+            <template v-slot:about>
+                <a href="./acerca_de.html" class="navbar-link">Acerca de la carrera</a>
+            </template>
+            <template v-slot:login-info>
+                <a href="./informacion_ingreso.html" class="navbar-link">Información de ingreso</a>
+            </template>
+            <template v-slot:students>
+                <a href="./alumnos.html" class="navbar-link navbar-link-active">Alumnos</a>
+            </template>
+            <template v-slot:teachers>
+                <a href="./profesores.html" class="navbar-link">Profesores</a>
+            </template>
+            <template v-slot:contact>
+                <a href="./contacto.html" class="navbar-link">Contacto</a>
+            </template>
+            <template v-slot:faqs>
+                <a href="./preguntas_frecuentes.html" class="navbar-link">Preguntas frecuentes</a>
+            </template>
+        </app-header>
+        <!-- /Header -->
+
+
+        <!-- Menú Mobile -->
+        <app-menu-mobile>
+            <template v-slot:about>
+                <a href="./acerca_de.html" class="navbar-link">Acerca de la carrera</a>
+            </template>
+            <template v-slot:login-info>
+                <a href="./informacion_ingreso.html" class="navbar-link">Información de ingreso</a>
+            </template>
+            <template v-slot:students>
+                <a href="./alumnos.html" class="navbar-link navbar-link-active">Alumnos</a>
+            </template>
+            <template v-slot:teachers>
+                <a href="./profesores.html" class="navbar-link">Profesores</a>
+            </template>
+            <template v-slot:contact>
+                <a href="./contacto.html" class="navbar-link">Contacto</a>
+            </template>
+            <template v-slot:faqs>
+                <a href="./preguntas_frecuentes.html" class="navbar-link">Preguntas frecuentes</a>
+            </template>
+        </app-menu-mobile>
+        <!-- /Menú Mobile -->
+
+
+        <!-- Contennido -->
+        <main class="w-full">
+
+            <!-- Cards -->
+            <section class="section-fluid section-container">
+                <div class="grid grid-cols-none md:grid-cols-2 gap-14 lg:gap-28">
+
+                    <!-- Horario de Clases -->
+                    <div class="card_item">
+                        <div
+                            class="bg-[url('../img/draws/curve-lines-1.svg')] bg-cover bg-no-repeat bg-bottom w-full h-full">
+                            <div class="card_item-content_text">
+                                <div>
+                                    <header class="title-dark text-center xl:text-left">
+                                        Horario de clases
+                                    </header>
+                                </div>
+                                <div class="m-auto xl:m-0">
+                                    <a href="./docs/documento.pdf" download class="btn btn-lg btn_primary">
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                                            </svg>
+                                        </div>
+                                        Descargar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Horario de Clases -->
+
+                    <!-- Calendario Escolar -->
+                    <div class="card_item">
+                        <div
+                            class="bg-[url('../img/draws/curve-lines-2.svg')] bg-cover bg-no-repeat bg-bottom w-full h-full">
+                            <div class="card_item-content_text">
+                                <div>
+                                    <header class="title-dark text-center xl:text-left">
+                                        Calendario escolar
+                                    </header>
+                                </div>
+                                <div class="m-auto xl:m-0">
+                                    <a href="./docs/documento.pdf" download class="btn btn-lg btn_primary">
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                                            </svg>
+                                        </div>
+                                        Descargar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Calendario escolar -->
+
+                </div>
+            </section>
+            <!-- /Cards -->
+
+
+            <!-- Trabajos -->
+            <section class="section-container">
+                <div>
+                    <header class="title-dark">
+                        Lo que nuestros alumnos realizan
+                    </header>
+                </div>
+                <div class="drop-shadow-xl">
+                    <div class="swiper swiperWorks relative">
+                        <div class="swiper-wrapper relative">
+                            <app-work>
+                                <template v-slot:image>
+                                    <img src="./img/photos/imagen-1.JPG" alt=""
+                                        class="work_item-content_image-figure" loading="lazy">
+                                </template>
+                                <template v-slot:title>
+                                    Aplicación Web para Recopilar, Difundir y Aprender Lenguas Originarias del Sur
+                                    de México: Una Perspectiva desde los Hablantes
+                                </template>
+                                <template v-slot:description>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat vel
+                                    cupiditate ea suscipit corrupti numquam et aliquam voluptates sint, quam, iusto
+                                    alias rerum nam at.
+                                </template>
+                            </app-work>
+
+                            <app-work>
+                                <template v-slot:image>
+                                    <img src="./img/photos/imagen-15.jpeg" alt=""
+                                        class="work_item-content_image-figure" loading="lazy">
+                                </template>
+                                <template v-slot:title>
+                                    Reconocimiento de Movimientos Motores
+                                    Estereotipados en niños con Transtorno del Espectro Autista utilizando una red
+                                    ConvLSTM
+                                </template>
+                                <template v-slot:description>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat vel
+                                    cupiditate ea suscipit corrupti numquam et aliquam voluptates sint, quam, iusto
+                                    alias rerum nam at.
+                                </template>
+                            </app-work>
+                        </div>
+                        <div class="hidden md:block">
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Trabajos -->
+
+
+            <!-- Vacantes Estancias -->
+            <section class="section-fluid section-container">
+                <div>
+                    <header class="title-dark">Vacantes para estancias profesionales</header>
+                </div>
+                <div class="grid grid-cols-none md:grid-cols-2 xl:grid-cols-3 gap-8">
+
+                    <app-vacant>
+                        <template v-slot:title>Diseño de aplicación web progresiva</template>
+                        <template v-slot:description>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Maxime perferendis quis laudantium consequuntur debitis placeat.</template>
+                        <template v-slot:date>17 Jun 2022</template>
+                    </app-vacant>
+
+                    <app-vacant>
+                        <template v-slot:title>Entrenamiento de redes neuronales</template>
+                        <template v-slot:description>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Maxime perferendis quis laudantium consequuntur debitis placeat.</template>
+                        <template v-slot:date>17 Jun 2022</template>
+                    </app-vacant>
+
+                    <app-vacant>
+                        <template v-slot:title>Gestión de recursos en servidores</template>
+                        <template v-slot:description>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Maxime perferendis quis laudantium consequuntur debitis placeat.</template>
+                        <template v-slot:date>17 Jun 2022</template>
+                    </app-vacant>
+
+                    <div class="md:col-span-1 md:items-end xl:col-span-full flex flex-row justify-end">
+                        <a href="./acerca_de.html" class="link link_primary group">
+                            Ver más vacantes
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5 transition-all group-hover:ml-2 duration-300 inline" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- /Vacantes Estancias -->
+
+
+            <!-- Vacantes Servicio Social -->
+            <section class="pb-14 lg:pb-28 section-container">
+                <div>
+                    <header class="title-dark">Vacantes para servicio social</header>
+                </div>
+                <div class="grid grid-cols-none md:grid-cols-2 xl:grid-cols-3 gap-8">
+
+                    <app-vacant>
+                        <template v-slot:title>Desarrollador front end jr.</template>
+                        <template v-slot:description>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Maxime perferendis quis laudantium consequuntur debitis placeat.</template>
+                        <template v-slot:date>17 Jun 2022</template>
+                    </app-vacant>
+
+
+                    <app-vacant>
+                        <template v-slot:title>Principiante scrum master</template>
+                        <template v-slot:description>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Maxime perferendis quis laudantium consequuntur debitis placeat.</template>
+                        <template v-slot:date>17 Jun 2022</template>
+                    </app-vacant>
+
+                    <app-vacant>
+                        <template v-slot:title>Tester de Ruby on rails</template>
+                        <template v-slot:description>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Maxime perferendis quis laudantium consequuntur debitis placeat.</template>
+                        <template v-slot:date>17 Jun 2022</template>
+                    </app-vacant>
+
+                    <div class="md:col-span-1 md:items-end xl:col-span-full flex flex-row justify-end">
+                        <a href="./acerca_de.html" class="link link_primary group">
+                            Ver más vacantes
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5 transition-all group-hover:ml-2 duration-300 inline" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- /Vacantes Servicio Social -->
+
+        </main>
+        <!-- Contenido -->
+
+
+        <!-- Footer -->
+        <app-footer>
+        </app-footer>
+        <!-- /Footer -->
+    </div>
+
+
+    <!-- Componentes -->
+    <script src="./js/app.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+
+    <!-- Carousel -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiperWorks = new Swiper('.swiperWorks', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            effect: "fade",
+            keyboard: {
+                enabled: true,
+            },
+            autoplay: {
+                delay: 6000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+    </script>
+
+    <!-- Animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000,
+            delay: 200,
+            once: true,
+        });
+    </script>
+</body>
+
+</html>

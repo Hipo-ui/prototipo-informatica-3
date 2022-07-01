@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="118.065 -136.775 1207.3409 555.39643"
+   width="1207.3409"
+   height="555.39642"
+   version="1.1"
+   id="svg891"
+   sodipodi:docname="Copia de patterns.svg"
+   inkscape:version="1.1.2 (b8e25be8, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview893"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:lockguides="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.32560244"
+     inkscape:cx="400.79552"
+     inkscape:cy="105.95744"
+     inkscape:window-width="1399"
+     inkscape:window-height="847"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg891" />
+  <defs
+     id="defs865">
+    <mask
+       id="SvgjsMask1241">
+      <rect
+         width="1440"
+         height="560"
+         fill="#ffffff"
+         id="rect824"
+         x="0"
+         y="0" />
+    </mask>
+    <pattern
+       x="0"
+       y="0"
+       width="145.68"
+       height="12.14"
+       patternUnits="userSpaceOnUse"
+       id="SvgjsPattern1243">
+      <rect
+         width="145.68"
+         height="6.07"
+         x="0"
+         y="0"
+         fill="rgba(8, 63, 136, 1)"
+         id="rect827" />
+      <rect
+         width="145.68"
+         height="6.07"
+         x="0"
+         y="6.07"
+         fill="rgba(0, 0, 0, 0)"
+         id="rect829" />
+    </pattern>
+    <clipPath
+       id="SvgjsClipPath1242">
+      <circle
+         r="36.419998"
+         cx="1145.33"
+         cy="320.51001"
+         id="circle832" />
+    </clipPath>
+    <pattern
+       x="0"
+       y="0"
+       width="246.48"
+       height="9.48"
+       patternUnits="userSpaceOnUse"
+       id="SvgjsPattern1245">
+      <rect
+         width="246.48"
+         height="4.74"
+         x="0"
+         y="0"
+         fill="rgba(8, 63, 136, 1)"
+         id="rect835" />
+      <rect
+         width="246.48"
+         height="4.74"
+         x="0"
+         y="4.74"
+         fill="rgba(0, 0, 0, 0)"
+         id="rect837" />
+    </pattern>
+    <clipPath
+       id="SvgjsClipPath1244">
+      <circle
+         r="61.619999"
+         cx="256.54001"
+         cy="1.7"
+         id="circle840" />
+    </clipPath>
+    <pattern
+       x="0"
+       y="0"
+       width="120"
+       height="6"
+       patternUnits="userSpaceOnUse"
+       id="SvgjsPattern1247">
+      <rect
+         width="120"
+         height="3"
+         x="0"
+         y="0"
+         fill="rgba(10, 84, 182, 1)"
+         id="rect843" />
+      <rect
+         width="120"
+         height="3"
+         x="0"
+         y="3"
+         fill="rgba(0, 0, 0, 0)"
+         id="rect845" />
+    </pattern>
+    <clipPath
+       id="SvgjsClipPath1246">
+      <circle
+         r="30"
+         cx="427.5"
+         cy="0.46000001"
+         id="circle848" />
+    </clipPath>
+    <pattern
+       x="0"
+       y="0"
+       width="96"
+       height="6"
+       patternUnits="userSpaceOnUse"
+       id="SvgjsPattern1251">
+      <rect
+         width="96"
+         height="3"
+         x="0"
+         y="0"
+         fill="rgba(10, 84, 182, 1)"
+         id="rect851" />
+      <rect
+         width="96"
+         height="3"
+         x="0"
+         y="3"
+         fill="rgba(0, 0, 0, 0)"
+         id="rect853" />
+    </pattern>
+    <clipPath
+       id="SvgjsClipPath1250">
+      <circle
+         r="24"
+         cx="496.41"
+         cy="30.389999"
+         id="circle856" />
+    </clipPath>
+    <pattern
+       x="0"
+       y="0"
+       width="7.98"
+       height="7.98"
+       patternUnits="userSpaceOnUse"
+       id="SvgjsPattern1253">
+      <path
+         d="M0 7.98L3.99 0L7.98 7.98"
+         stroke="rgba(10, 84, 182, 1)"
+         fill="none"
+         id="path859" />
+    </pattern>
+    <clipPath
+       id="SvgjsClipPath1252">
+      <circle
+         r="91.769997"
+         cx="942.70001"
+         cy="221.97"
+         id="circle862" />
+    </clipPath>
+  </defs>
+  <g
+     mask="url(#SvgjsMask1241)"
+     fill="none"
+     id="g889"
+     transform="translate(-76.85501,-136.775)">
+    <circle
+       r="57.168118"
+       cx="742.28998"
+       cy="478.76999"
+       stroke="rgba(8, 63, 136, 1)"
+       stroke-width="1.01"
+       stroke-dasharray="2, 2"
+       id="circle867" />
+    <rect
+       width="145.67999"
+       height="145.67999"
+       clip-path="url(#SvgjsClipPath1242)"
+       x="1072.49"
+       y="247.67"
+       fill="url(#SvgjsPattern1243)"
+       transform="rotate(61.46,1145.33,320.51)"
+       id="rect869" />
+    <path
+       d="m 1032.5,240.81 -0.45,66.33 -31.0929,-64.48295 z"
+       stroke="rgba(10, 84, 182, 1)"
+       stroke-width="2.35"
+       stroke-dasharray="2, 2"
+       id="path871" />
+    <rect
+       width="246.48"
+       height="246.48"
+       clip-path="url(#SvgjsClipPath1244)"
+       x="133.3"
+       y="-121.54"
+       fill="url(#SvgjsPattern1245)"
+       transform="rotate(-7.61,256.54,1.7)"
+       id="rect873" />
+    <path
+       d="m 1326.48,457.9 a 5.6,5.6 0 1 0 -3.17,10.74 5.6,5.6 0 1 0 3.17,-10.74 z m -4.53,15.35 a 5.6,5.6 0 1 0 -3.17,10.74 5.6,5.6 0 1 0 3.17,-10.74 z m -4.53,15.34 a 5.6004464,5.6004464 0 1 0 -3.18,10.74 5.6004464,5.6004464 0 1 0 3.18,-10.74 z m -4.53,15.35 a 5.6004464,5.6004464 0 1 0 -3.18,10.74 5.6004464,5.6004464 0 1 0 3.18,-10.74 z m 7.3,-81.26 a 5.6,5.6 0 1 0 -3.17,10.74 5.6,5.6 0 1 0 3.17,-10.74 z m -4.53,15.35 a 5.6,5.6 0 1 0 -3.17,10.74 5.6,5.6 0 1 0 3.17,-10.74 z m -4.53,15.34 a 5.6,5.6 0 1 0 -3.17,10.74 5.6,5.6 0 1 0 3.17,-10.74 z m -4.53,15.35 a 5.6,5.6 0 1 0 -3.17,10.74 5.6,5.6 0 1 0 3.17,-10.74 z m 7.31,-81.26 a 5.6,5.6 0 1 0 -3.17,10.74 5.6,5.6 0 1 0 3.17,-10.74 z m -4.53,15.34 a 5.6038246,5.6038246 0 1 0 -3.17,10.75 5.6038246,5.6038246 0 1 0 3.17,-10.75 z m -4.53,15.35 a 5.6,5.6 0 1 0 -3.17,10.74 5.6,5.6 0 1 0 3.17,-10.74 z m -4.53,15.34 a 5.6038246,5.6038246 0 1 0 -3.17,10.75 5.6038246,5.6038246 0 1 0 3.17,-10.75 z"
+       fill="rgba(10, 84, 182, 1)"
+       id="path875" />
+    <rect
+       width="120"
+       height="120"
+       clip-path="url(#SvgjsClipPath1246)"
+       x="367.5"
+       y="-59.540001"
+       fill="url(#SvgjsPattern1247)"
+       transform="rotate(-117.02,427.5,0.46)"
+       id="rect877" />
+    <path
+       d="m 754.55,462.29 a 5.6,5.6 0 1 0 8.46,-7.33 5.6,5.6 0 1 0 -8.46,7.33 z m 12.09,-10.48 a 5.6001607,5.6001607 0 1 0 8.46,-7.34 5.6001607,5.6001607 0 1 0 -8.46,7.34 z m 12.09,-10.48 a 5.6001607,5.6001607 0 1 0 8.46,-7.34 5.6001607,5.6001607 0 1 0 -8.46,7.34 z m 12.09,-10.48 a 5.6001607,5.6001607 0 1 0 8.46,-7.34 5.6001607,5.6001607 0 1 0 -8.46,7.34 z m -49.96,64.5 a 5.6001607,5.6001607 0 1 0 8.46,-7.34 5.6001607,5.6001607 0 1 0 -8.46,7.34 z m 12.09,-10.49 a 5.6,5.6 0 1 0 8.46,-7.33 5.6,5.6 0 1 0 -8.46,7.33 z m 12.08,-10.48 a 5.6039383,5.6039383 0 1 0 8.47,-7.34 5.6039383,5.6039383 0 1 0 -8.47,7.34 z m 12.09,-10.48 a 5.6001607,5.6001607 0 1 0 8.46,-7.34 5.6001607,5.6001607 0 1 0 -8.46,7.34 z"
+       fill="rgba(8, 63, 136, 1)"
+       id="path879" />
+    <circle
+       r="82.85643"
+       cx="980.96997"
+       cy="472.54001"
+       stroke="rgba(8, 63, 136, 1)"
+       stroke-width="2.08"
+       stroke-dasharray="3, 2"
+       id="circle881" />
+    <circle
+       r="64.610985"
+       cx="1337.65"
+       cy="171.16"
+       stroke="rgba(10, 84, 182, 1)"
+       stroke-width="1.55"
+       stroke-dasharray="3, 2"
+       id="circle883" />
+    <rect
+       width="96"
+       height="96"
+       clip-path="url(#SvgjsClipPath1250)"
+       x="448.41"
+       y="-17.610001"
+       fill="url(#SvgjsPattern1251)"
+       transform="rotate(62.77,496.41,30.39)"
+       id="rect885" />
+    <rect
+       width="367.07999"
+       height="367.07999"
+       clip-path="url(#SvgjsClipPath1252)"
+       x="759.15997"
+       y="38.43"
+       fill="url(#SvgjsPattern1253)"
+       transform="rotate(-138.39,942.7,221.97)"
+       id="rect887" />
+  </g>
+</svg>

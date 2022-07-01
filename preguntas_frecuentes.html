@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="shortcut icon" href="./img/logos/escudo-unsij-white.png" type="image/png">
+    <title>Preguntas frecuentes | Licenciatura en Informática</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Header -->
+        <app-header>
+            <template v-slot:about>
+                <a href="./acerca_de.html" class="navbar-link">Acerca de la carrera</a>
+            </template>
+            <template v-slot:login-info>
+                <a href="./informacion_ingreso.html" class="navbar-link">Información de ingreso</a>
+            </template>
+            <template v-slot:students>
+                <a href="./alumnos.html" class="navbar-link">Alumnos</a>
+            </template>
+            <template v-slot:teachers>
+                <a href="./profesores.html" class="navbar-link">Profesores</a>
+            </template>
+            <template v-slot:contact>
+                <a href="./contacto.html" class="navbar-link">Contacto</a>
+            </template>
+            <template v-slot:faqs>
+                <a href="./preguntas_frecuentes.html" class="navbar-link navbar-link-active">Preguntas frecuentes</a>
+            </template>
+        </app-header>
+        <!-- /Header -->
+
+
+        <!-- Menú Mobile -->
+        <app-menu-mobile>
+            <template v-slot:about>
+                <a href="./acerca_de.html" class="navbar-link">Acerca de la carrera</a>
+            </template>
+            <template v-slot:login-info>
+                <a href="./informacion_ingreso.html" class="navbar-link">Información de ingreso</a>
+            </template>
+            <template v-slot:students>
+                <a href="./alumnos.html" class="navbar-link">Alumnos</a>
+            </template>
+            <template v-slot:teachers>
+                <a href="./profesores.html" class="navbar-link">Profesores</a>
+            </template>
+            <template v-slot:contact>
+                <a href="./contacto.html" class="navbar-link">Contacto</a>
+            </template>
+            <template v-slot:faqs>
+                <a href="./preguntas_frecuentes.html" class="navbar-link navbar-link-active">Preguntas frecuentes</a>
+            </template>
+        </app-menu-mobile>
+        <!-- /Menú Mobile -->
+
+
+        <!-- Contenido -->
+        <main class="w-full">
+
+            <!-- Preguntas Frecuentes -->
+            <section class="section-fluid section-container">
+                <div class="lg:mx-auto">
+                    <header class="title-dark">Preguntas frecuentes</header>
+                </div>
+                <div class="w-full xl:w-3/5 mx-auto flex flex-col gap-8 p-0 xl:bg-white xl:border xl:border-accent-100 xl:rounded-xl xl:p-8"
+                    id="accordion-flush" data-accordion="collapse">
+
+                    <div class="faq_item" id="accordion-flush-heading-1">
+                        <button class="faq_item-content_question" data-accordion-target="#accordion-flush-body-1"
+                            aria-expanded="true" aria-controls="accordion-flush-body-1">
+                            <p class="faq_item-content_question-question">¿Cuáles son los requisitos de ingreso?</p>
+                            <div>
+                                <svg data-accordion-icon class="faq_item-content_question-icon rotate-180"
+                                    fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <p class="faq_item-content_answer" id="accordion-flush-body-1"
+                            aria-labelledby="accordion-flush-heading-1">Lorem ipsum dolor sit, amet consectetur
+                            adipisicing elit.
+                            Aspernatur officiis at autem!
+                        </p>
+                    </div>
+
+
+                    <div class="faq_item" id="accordion-flush-heading-2">
+                        <button class="faq_item-content_question" data-accordion-target="#accordion-flush-body-2"
+                            aria-expanded="false" aria-controls="accordion-flush-body-2">
+                            <p class="faq_item-content_question-question">¿En dónde puedo presentar mi examen de
+                                admisión?</p>
+                            <div>
+                                <svg data-accordion-icon class="faq_item-content_question-icon rotate-180"
+                                    fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <p class="faq_item-content_answer" id="accordion-flush-body-2"
+                            aria-labelledby="accordion-flush-heading-2">Lorem ipsum dolor sit, amet consectetur
+                            adipisicing elit.
+                            Aspernatur officiis at autem!
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+            <!-- /Preguntas Frecuentes -->
+
+        </main>
+        <!-- Contenido -->
+
+
+        <!-- Footer -->
+        <app-footer>
+        </app-footer>
+        <!-- /Footer -->
+    </div>
+
+
+    <!-- Componentes -->
+    <script src="./js/app.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+</body>
+
+</html>

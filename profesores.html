@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="shortcut icon" href="./img/logos/escudo-unsij-white.png" type="image/png">
+    <title>Profesores | Licenciatura en Informática</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Header -->
+        <app-header>
+            <template v-slot:about>
+                <a href="./acerca_de.html" class="navbar-link">Acerca de la carrera</a>
+            </template>
+            <template v-slot:login-info>
+                <a href="./informacion_ingreso.html" class="navbar-link">Información de ingreso</a>
+            </template>
+            <template v-slot:students>
+                <a href="./alumnos.html" class="navbar-link">Alumnos</a>
+            </template>
+            <template v-slot:teachers>
+                <a href="./profesores.html" class="navbar-link navbar-link-active">Profesores</a>
+            </template>
+            <template v-slot:contact>
+                <a href="./contacto.html" class="navbar-link">Contacto</a>
+            </template>
+            <template v-slot:faqs>
+                <a href="./preguntas_frecuentes.html" class="navbar-link">Preguntas frecuentes</a>
+            </template>
+        </app-header>
+        <!-- /Header -->
+
+        <!-- Menú Mobile -->
+        <app-menu-mobile>
+            <template v-slot:about>
+                <a href="./acerca_de.html" class="navbar-link">Acerca de la carrera</a>
+            </template>
+            <template v-slot:login-info>
+                <a href="./informacion_ingreso.html" class="navbar-link">Información de ingreso</a>
+            </template>
+            <template v-slot:students>
+                <a href="./alumnos.html" class="navbar-link">Alumnos</a>
+            </template>
+            <template v-slot:teachers>
+                <a href="./profesores.html" class="navbar-link navbar-link-active">Profesores</a>
+            </template>
+            <template v-slot:contact>
+                <a href="./contacto.html" class="navbar-link">Contacto</a>
+            </template>
+            <template v-slot:faqs>
+                <a href="./preguntas_frecuentes.html" class="navbar-link">Preguntas frecuentes</a>
+            </template>
+        </app-menu-mobile>
+        <!-- /Menú Mobile -->
+
+
+        <!-- Contennido -->
+        <main class="w-full">
+
+            <!-- Profesores -->
+            <section class="section-fluid section-container">
+                <div>
+                    <header class="title-dark">
+                        Nuestros profesores
+                    </header>
+                </div>
+                <div class="grid grid-cols-none md:grid-cols-2 xl:grid-cols-3 gap-8">
+
+                    <app-profile>
+                        <template v-slot:image>
+                            <img src="./img/teachers/teacher-1.png" alt="" class="user_item-content_image-figure">
+                        </template>
+                        <template v-slot:name>
+                            M.C.E Luis Enrique Ochoa
+                        </template>
+                        <template v-slot:email>
+                            luisenriqueochoa@mail.edu.com
+                        </template>
+                    </app-profile>
+
+                    <app-profile>
+                        <template v-slot:image>
+                            <img src="./img/teachers/teacher-2.png" alt="" class="user_item-content_image-figure">
+                        </template>
+                        <template v-slot:name>
+                            M.M.A. Carlos David Aquino
+                        </template>
+                        <template v-slot:email>
+                            carlos_aq_unsij@mail.edu.com
+                        </template>
+                    </app-profile>
+
+                    <app-profile>
+                        <template v-slot:image>
+                            <img src="./img/teachers/teacher-3.png" alt="" class="user_item-content_image-figure">
+                        </template>
+                        <template v-slot:name>
+                            D.I.A. Flor Ortega Casas
+                        </template>
+                        <template v-slot:email>
+                            flor_ortega_89@mail.edu.com
+                        </template>
+                    </app-profile>
+
+                    <app-profile>
+                        <template v-slot:image>
+                            <img src="./img/teachers/teacher-4.png" alt="" class="user_item-content_image-figure">
+                        </template>
+                        <template v-slot:name>
+                            D.C.C. Ana Paula Prada Canseco
+                        </template>
+                        <template v-slot:email>
+                            napaula34@mail.edu.com
+                        </template>
+                    </app-profile>
+
+                    <app-profile>
+                        <template v-slot:image>
+                            <img src="./img/teachers/teacher-5.png" alt="" class="user_item-content_image-figure">
+                        </template>
+                        <template v-slot:name>
+                            M.T.I. Rocío Mejía Acosta
+                        </template>
+                        <template v-slot:email>
+                            mti_rosy_acosta@mail.edu.com
+                        </template>
+                    </app-profile>
+
+                    <app-profile>
+                        <template v-slot:image>
+                            <img src="./img/teachers/teacher-6.png" alt="" class="user_item-content_image-figure">
+                        </template>
+                        <template v-slot:name>
+                            M.R.C. Alonso Peña Esquivel
+                        </template>
+                        <template v-slot:email>
+                            alonsopeña-unsij@mail.edu.com
+                        </template>
+                    </app-profile>
+
+                    <app-profile>
+                        <template v-slot:image>
+                            <img src="./img/teachers/teacher-7.png" alt="" class="user_item-content_image-figure">
+                        </template>
+                        <template v-slot:name>
+                            M.R.C. Mario López Cotajo
+                        </template>
+                        <template v-slot:email>
+                            mario_lopez_cotajo_88_1234_clase_unsij@mail.edu.com
+                        </template>
+                    </app-profile>
+
+                </div>
+            </section>
+            <!-- /Profesores -->
+
+        </main>
+        <!-- Contenido -->
+
+
+        <!-- Footer -->
+        <app-footer>
+        </app-footer>
+        <!-- /Footer -->
+    </div>
+
+
+    <!-- Componentes -->
+    <script src="./js/app.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+
+</body>
+
+</html>
